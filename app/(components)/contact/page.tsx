@@ -75,19 +75,19 @@ export default function ContactPage() {
         {
             city: "Amravati",
             address: "4, Swapnashri Colony,Siddhivinayak Nagar, Ashiyad Square,Shegaon Road, Amravati, Maharashtra, India 444604",
-            phone: "1800 833 2700, 0721-2970300",
+            phone: "080 6978 0000",
             hours: "Mon-Sat: 9:00 AM - 6:00 PM",
         },
         {
             city: "Pune",
             address: "8th floor, Velocity, MONT VERT, Baner - Pashan Link Rd, Pashan, Pune, Maharashtra 411021",
-            phone: " 8975758104, +91 20-46700861",
+            phone: " +90 9103 9103",
             hours: "Mon-Sat: 9:00 AM - 6:00 PM",
         },
         {
             city: "Thane",
             address: "1101, Lodha Supremus, Lodha Business District 2,Off Kolshet Road, Thane-West, Maharashtra, India 400607",
-            phone: "7028791416, + 91 20 - 46700861",
+            phone: "7028791416",
             hours: "Mon-Sat: 9:00 AM - 6:00 PM",
         },
         {

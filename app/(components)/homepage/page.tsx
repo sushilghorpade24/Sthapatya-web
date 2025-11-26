@@ -1573,7 +1573,7 @@ export default function HomePage() {
                                 </span>{" "}
                                 delivered across Maharashtra
                             </motion.p>
-                            <Link href="/projects">
+                            <Link href="/projectpage">
                                 <AnimatedButton
                                     variant="secondary"
                                     icon={<ArrowRight size={18} />}
@@ -1894,7 +1894,7 @@ export default function HomePage() {
                             </div>
 
                             <div className="text-center mt-4">
-                                <Link href="/journey">
+                                <Link href="/journeypage">
                                     <AnimatedButton
                                         variant="secondary"
                                         icon={<ArrowRight size={18} />}
@@ -2665,12 +2665,12 @@ export default function HomePage() {
                                         },
                                         {
                                             name: "Projects",
-                                            path: "/projects",
+                                            path: "/projectpage",
                                             icon: FileText,
                                         },
                                         {
                                             name: "Journey",
-                                            path: "/journey",
+                                            path: "/journeypage",
                                             icon: TrendingUp,
                                         },
                                     ].map((link, index) => (

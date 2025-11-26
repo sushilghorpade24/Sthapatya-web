@@ -277,39 +277,43 @@ export default function ProjectsPage() {
 
                     {/* Mobile carousel: single centered item */}
 
-                    <MobileCarousel
-                        items={keyClients}
-                        interval={3000}
-                        className="w-full"
-                        renderItem={(client: Client) => (
-                            <div className="p-3">
-                                <motion.div
-                                    initial={{ opacity: 0, scale: 0.9 }}
-                                    whileInView={{ opacity: 1, scale: 1 }}
-                                    viewport={{ once: true }}
-                                    transition={{ delay: 0.05 }}
-                                    whileHover={{ y: -4, scale: 1.02 }}
-                                    className="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all border-2 h-full"
-                                    style={{ borderColor: `${colors.primary}40` }}
-                                >
-                                    <div className="absolute inset-0">
-                                        <ImageWithFallback src={client.image} alt={client.name} className="w-full h-full object-cover" />
-                                        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
-                                    </div>
-                                    <div className="relative z-10 flex flex-col items-center text-center gap-4 p-7">
-                                        <div className="w-16 h-16 rounded-xl flex items-center justify-center border-2 shadow-lg backdrop-blur-sm overflow-hidden"
-                                            style={{ backgroundColor: 'rgba(255, 255, 255, 0.9)', borderColor: colors.accent }}
-                                        >
-                                            <ImageWithFallback src={client.image} alt={`${client.name} Logo`} className="w-full h-full object-cover" />
-                                        </div>
-                                        <h3 className="text-base text-white" style={{ fontWeight: 700, textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
-                                            {client.name}
-                                        </h3>
-                                    </div>
-                                </motion.div>
-                            </div>
-                        )}
-                    />
+                    {/* Mobile carousel: single centered item */}
+<div className="block md:hidden">
+    <MobileCarousel
+        items={keyClients}
+        interval={3000}
+        className="w-full"
+        renderItem={(client: Client) => (
+            <div className="p-3">
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.05 }}
+                    whileHover={{ y: -4, scale: 1.02 }}
+                    className="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all border-2 h-full"
+                    style={{ borderColor: `${colors.primary}40` }}
+                >
+                    <div className="absolute inset-0">
+                        <ImageWithFallback src={client.image} alt={client.name} className="w-full h-full object-cover" />
+                        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
+                    </div>
+                    <div className="relative z-10 flex flex-col items-center text-center gap-4 p-7">
+                        <div className="w-16 h-16 rounded-xl flex items-center justify-center border-2 shadow-lg backdrop-blur-sm overflow-hidden"
+                            style={{ backgroundColor: 'rgba(255, 255, 255, 0.9)', borderColor: colors.accent }}
+                        >
+                            <ImageWithFallback src={client.image} alt={`${client.name} Logo`} className="w-full h-full object-cover" />
+                        </div>
+                        <h3 className="text-base text-white" style={{ fontWeight: 700, textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
+                            {client.name}
+                        </h3>
+                    </div>
+                </motion.div>
+            </div>
+        )}
+    />
+</div>
+
                     {/* Desktop carousel: multi-column carousel (visible md and up) */}
                     <div className="hidden md:block">
                         <Carousel
