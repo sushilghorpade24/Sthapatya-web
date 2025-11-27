@@ -7,6 +7,14 @@ interface HomeSidebarProps {
   activeSection: string;
   onSectionClick: (id: string) => void;
 }
+export const metadata = {
+  title: {
+    default: "Sthapatya Web",
+    template: "%s | Sthapatya Web",
+  },
+  description:
+    "Experience modern architectural design, planning, interiors, and construction services with Sthapatya Web.",
+};
 
 export default function HomeSidebar({
   sections = [],             // <-- fallback protects .map()

@@ -45,6 +45,12 @@ import HomeSidebar from "../homesidebar.tsx/page";
 import Image from "next/image";
 
 // Optimized Service Slideshow Component with Enhanced Animations
+
+export const metadata = {
+  title: "Homepage",
+  description: "Welcome to Sthapatya Web.",
+};
+
 function ServiceSlideshow({
     onServiceChange,
 }: {

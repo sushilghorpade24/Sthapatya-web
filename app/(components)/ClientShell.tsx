@@ -10,18 +10,18 @@ export default function ClientShell({ children }: { children: React.ReactNode })
     const pathname = usePathname();
 
     // Routes where Navbar + Footer should NOT appear
-    const hideOn = ["/homepage", "/about","/journeypage","/projectpage","/services","/career","/contact"];
+    const showOn = ["/homepage", "/about","/journeypage","/projectpage","/services","/career","/contact"];
 
-    const shouldHide = hideOn.includes(pathname);
+    const shouldShow = showOn.includes(pathname);
 
     return (
         <>
             <PageLoader />
-            {shouldHide && <Navbar />}
+            {shouldShow && <Navbar />}
 
             {children}
 
-            {shouldHide && <Footer />}
+            {shouldShow && <Footer />}
         </>
     );
 }
