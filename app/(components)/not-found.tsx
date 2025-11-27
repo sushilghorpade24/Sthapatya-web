@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Home } from "lucide-react";
+import { Home } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 export default function NotFound() {
@@ -152,7 +152,7 @@ export default function NotFound() {
                             </svg>
 
                             <p className="mt-5 text-[11px] text-white/80 text-center tracking-[0.25em] uppercase">
-                                Sthapatya Consultants
+                                Sthapatya Consultants & Softwares
                             </p>
                         </div>
                     </div>
