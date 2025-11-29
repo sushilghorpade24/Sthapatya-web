@@ -16,7 +16,7 @@ export default function ClientShell({ children }: { children: React.ReactNode })
 
     return (
         <>
-            <PageLoader />
+            {/* <PageLoader /> */}
             {shouldShow && <Navbar />}
 
             {children}

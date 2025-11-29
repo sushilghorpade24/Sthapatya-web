@@ -32,7 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
 
         {/* GLOBAL FIRST-LOAD LOADER */}
-        <PageLoader />
+        {/* <PageLoader /> */}
 
         <ThemeProvider>
           <ClientShell>
